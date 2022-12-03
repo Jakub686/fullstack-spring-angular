@@ -17,6 +17,11 @@ export class CreateEmployeeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onSubmit(){
+    console.log(this.employee);
+    this.saveEmployee();
+  }
+  
   saveEmployee(){
     this.employeeService.createEmployee(this.employee).subscribe( data =>{
       console.log(data);
@@ -29,8 +34,5 @@ export class CreateEmployeeComponent implements OnInit {
     this.router.navigate(['/employees']);
   }
   
-  onSubmit(){
-    console.log(this.employee);
-    this.saveEmployee();
-  }
+
 }
