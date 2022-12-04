@@ -1,24 +1,30 @@
 <div class="col-md-6 offset-md-3">
     <h3> Create Employee </h3>
     <form (ngSubmit) = "onSubmit()">
-    
-        <div class="form-group">
-            <label> First Name</label><br>
-            <input type="text" class ="form-control" id = "firstName"
-                [(ngModel)] = "employee.firstName" name = "firstName">
-        </div>
-    
-        <div class="form-group">
-            <label> Last Name</label><br>
-            <input type="text" class ="form-control" id = "lastName"
-                [(ngModel)] = "employee.lastName" name = "lastName">
-        </div>
-    
-        <div class="form-group">
-            <label> Email Id</label><br>
-            <input type="text" class ="form-control" id = "emailId"
-                [(ngModel)] = "employee.emailId" name = "emailId">
-        </div>
+
+        <table style="width:100%">
+            <th>
+                <div class="form-group">
+                    <label> First Name</label><br>
+                    <input type="text" class ="form-control" id = "firstName"
+                        [(ngModel)] = "employee.firstName" name = "firstName">
+                </div>
+            </th>
+            <th>
+                <div class="form-group">
+                    <label> Last Name</label><br>
+                    <input type="text" class ="form-control" id = "lastName"
+                        [(ngModel)] = "employee.lastName" name = "lastName">
+                </div>
+            </th>
+            <th>
+                <div class="form-group">
+                    <label> Email Id</label><br>
+                    <input type="text" class ="form-control" id = "emailId"
+                        [(ngModel)] = "employee.emailId" name = "emailId">
+                </div>
+            </th>
+        </table>
     
         <button class = "btn btn-success" type ="submit">Submit</button>
         <button (click)="handleClear()">Clear input field</button>
