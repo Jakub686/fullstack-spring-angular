@@ -20,6 +20,7 @@ export class CreateEmployeeComponent implements OnInit {
   onSubmit(){
     console.log(this.employee);
     this.saveEmployee();
+     
   }
   
   saveEmployee(){
@@ -32,6 +33,10 @@ export class CreateEmployeeComponent implements OnInit {
 
   goToEmployeeList(){
     this.router.navigate(['/employees']);
+  }
+
+  handleClear(){
+    this.employee.firstName = ' ';
   }
   
 
