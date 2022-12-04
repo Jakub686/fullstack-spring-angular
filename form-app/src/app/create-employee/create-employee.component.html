@@ -2,7 +2,7 @@
     <h3> Create Employee </h3>
     <form (ngSubmit) = "onSubmit()">
 
-        <table style="width:100%">
+        <table class="table">
             <th>
                 <div class="form-group">
                     <label> First Name</label><br>
@@ -25,10 +25,14 @@
                 </div>
             </th>
         </table>
-    
-        <button class = "btn btn-success" type ="submit">Submit</button>
-        <button (click)="handleClear()">Clear input field</button>
-   
-    
+        <table>
+            <th>
+                <button class = "btn btn-success" type ="submit">Submit</button>
+            </th>
+            <th style="width:100%"></th>
+            <th>
+                <button class = "btn btn-success" (click)="handleClear()">Clear</button>
+                </th>
+        </table>
     </form>
     </div> 
