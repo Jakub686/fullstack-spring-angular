@@ -37,6 +37,8 @@ export class CreateEmployeeComponent implements OnInit {
 
   handleClear(){
     this.employee.firstName = ' ';
+    this.employee.lastName = ' ';
+    this.employee.emailId = ' ';
   }
   
 
